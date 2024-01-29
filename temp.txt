@@ -1,0 +1,8 @@
+python fautvdownload.py 36861 36959 37063 37610 37613 37933 37934 38347 38348 38349 38621 38643 38842 38942 39221 39503 39502 39564 39773 3
+9853 40030 40115 40311 40403 40595 40619 40828 40872 40995 --output "../../Videos/ITC/Session 1.mp4" "../../Videos/ITC/Session 2.mp4" "../../Videos/ITC/Session 3.mp4" "../../Videos/I
+TC/Session 4 (Tutorial 1).mp4" "../../Videos/ITC/Session 5.mp4" "../../Videos/ITC/Session 6 (Tutorial 2).mp4" "../../Videos/ITC/Session 7.mp4" "../../Videos/ITC/Session 8.mp4" "../..
+/Videos/ITC/Session 9.mp4" "../../Videos/ITC/Session 10 (Tutorial 3).mp4" "../../Videos/ITC/Session 11.mp4" "../../Videos/ITC/Session 12.mp4" "../../Videos/ITC/Session 13.mp4" "../..
+/Videos/ITC/Session 14 (Tutorial 4).mp4" "../../Videos/ITC/Session 15.mp4" "../../Videos/ITC/Session 16.mp4" "../../Videos/ITC/Session 17.mp4" "../../Videos/ITC/Session 18 (Tutorial 
+5).mp4" "../../Videos/ITC/Session 19.mp4" "../../Videos/ITC/Session 20.mp4" "../../Videos/ITC/Session 21.mp4" "../../Videos/ITC/Session 22 (Tutorial 6).mp4" "../../Videos/ITC/Session
+ 23.mp4" "../../Videos/ITC/Session 24.mp4" "../../Videos/ITC/Session 25 (+Tutorial 6.5).mp4" "../../Videos/ITC/Session 26.mp4" "../../Videos/ITC/Session 27 (+Tutorial 7).mp4" "../../
+Videos/ITC/Session 28 (Tutorial 8).mp4" "../../Videos/ITC/Session 29 (Q&A).mp4"

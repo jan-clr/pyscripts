@@ -51,20 +51,29 @@ def get_cookies():
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('ids', help='The ids of the videos to download', nargs='+')
+    parser.add_argument('--urls', help='The m3u8 url of the video to download', nargs='+')
+    parser.add_argument('--ids', help='The ids of the videos to download', nargs='+')
     parser.add_argument('--output', help='The output file names', nargs='+')
     args = parser.parse_args()
 
-    if len(args.ids) != len(args.output):
-        print('The number of ids and output file names must be the same')
+    if args.urls is None and args.ids is None:
+        print('You must specify either the urls or the ids')
         return
 
-    urls = [f'https://www.fau.tv/clip/id/{id}' for id in args.ids]
-    # Get cookies from .env file
-    cookies = get_cookies()
-    print(cookies)
-    # Get the download URL
-    download_urls = [get_download_url(url, cookies) for url in urls]
+    if (args.ids is not None and (len(args.ids) != len(args.output))) or (args.urls is not None and len(args.urls) != len(args.output)):
+        print('The number of input and output file names must be the same')
+        return
+    
+    if args.urls is not None:
+        download_urls = args.urls
+    else:
+        urls = [f'https://www.fau.tv/clip/id/{id}' for id in args.ids]
+        # Get cookies from .env file
+        cookies = get_cookies()
+        print(cookies)
+        # Get the download URL
+        download_urls = [get_download_url(url, cookies) for url in urls]
+
     print(download_urls)
 
     # Download the file
